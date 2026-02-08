@@ -1,0 +1,175 @@
+{
+  "common": {
+    "shopNow": "Shop Now",
+    "viewAll": "View All",
+    "addToCart": "Add to Cart",
+    "quickView": "Quick View",
+    "learnMore": "Learn More",
+    "subscribe": "Subscribe",
+    "readMore": "Read More",
+    "search": "Search...",
+    "cart": "Cart",
+    "account": "Account",
+    "menu": "Menu"
+  },
+  "header": {
+    "storeName": "Marketplace Store",
+    "email": "info@marketplace.com",
+    "phone": "+1 555 123 4567",
+    "categories": {
+      "electronics": "Electronics",
+      "fashion": "Fashion",
+      "homeAndLiving": "Home & Living",
+      "beauty": "Beauty"
+    },
+    "subcategories": {
+      "phones": "Phones",
+      "laptops": "Laptops",
+      "tablets": "Tablets",
+      "accessories": "Accessories",
+      "men": "Men",
+      "women": "Women",
+      "kids": "Kids",
+      "shoes": "Shoes",
+      "furniture": "Furniture",
+      "decor": "Decor",
+      "kitchen": "Kitchen",
+      "garden": "Garden",
+      "skincare": "Skincare",
+      "makeup": "Makeup",
+      "hairCare": "Hair Care",
+      "fragrances": "Fragrances"
+    }
+  },
+  "hero": {
+    "slide1": {
+      "badge": "New Collection",
+      "title": "Natural & Organic Products",
+      "subtitle": "Discover our curated selection of eco-friendly essentials for your sustainable lifestyle",
+      "cta": "Shop Collection"
+    },
+    "slide2": {
+      "badge": "Summer Sale",
+      "title": "Up to 50% Off",
+      "subtitle": "Limited time offer on selected items. Don't miss out on these amazing deals!",
+      "cta": "Shop Sale"
+    },
+    "slide3": {
+      "badge": "Premium Quality",
+      "title": "Handcrafted With Care",
+      "subtitle": "Each product is carefully selected to ensure the highest quality standards",
+      "cta": "Explore Now"
+    }
+  },
+  "categoryHighlights": {
+    "title1": "Fresh Vegetables",
+    "subtitle1": "Farm to Table",
+    "title2": "Organic Fruits",
+    "subtitle2": "100% Natural",
+    "title3": "Healthy Snacks",
+    "subtitle3": "Guilt-Free"
+  },
+  "welcome": {
+    "badge": "Welcome to Marketplace",
+    "title": "Your One-Stop Shop for Quality Products",
+    "description": "We're dedicated to bringing you the finest selection of products from around the world. Our commitment to quality, sustainability, and customer satisfaction sets us apart.",
+    "features": {
+      "organic": "100% Organic Products",
+      "shipping": "Free Shipping Over $50",
+      "support": "24/7 Customer Support",
+      "returns": "Easy 30-Day Returns"
+    }
+  },
+  "categories": {
+    "badge": "Shop by Category",
+    "title": "Explore Our Collections",
+    "description": "Find exactly what you're looking for in our carefully curated categories",
+    "items": {
+      "freshProduce": "Fresh Produce",
+      "organicDairy": "Organic Dairy",
+      "naturalBeauty": "Natural Beauty",
+      "homeEssentials": "Home Essentials",
+      "healthySnacks": "Healthy Snacks",
+      "beverages": "Beverages"
+    }
+  },
+  "dealOfDay": {
+    "badge": "Deal of the Day",
+    "title": "Premium Organic Honey",
+    "description": "Raw, unfiltered honey sourced from local beekeepers. Rich in antioxidants and natural enzymes.",
+    "originalPrice": "$49.99",
+    "salePrice": "$29.99",
+    "organicBadge": "100% Organic",
+    "timer": {
+      "days": "Days",
+      "hours": "Hours",
+      "mins": "Mins",
+      "secs": "Secs"
+    }
+  },
+  "hotDeals": {
+    "badge": "Hot Deals",
+    "title": "Special Offers Just for You",
+    "description": "Don't miss out on these amazing deals"
+  },
+  "promoBanner": {
+    "title": "Subscribe & Save 15%",
+    "description": "Join our newsletter and get exclusive discounts on your first order",
+    "cta": "Subscribe Now"
+  },
+  "brands": {
+    "badge": "Our Partners",
+    "title": "Trusted by Leading Brands"
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "What Our Customers Say",
+    "happyCustomers": "Happy Customers"
+  },
+  "blog": {
+    "badge": "From Our Blog",
+    "title": "Latest News & Tips",
+    "description": "Stay updated with the latest trends and tips"
+  },
+  "instagram": {
+    "badge": "Follow Us",
+    "title": "Join Our Community",
+    "handle": "@marketplace"
+  },
+  "newsletter": {
+    "title": "Stay in the Loop",
+    "description": "Subscribe to our newsletter for exclusive deals, new arrivals, and eco-tips.",
+    "placeholder": "Enter your email",
+    "cta": "Subscribe",
+    "privacy": "We respect your privacy. Unsubscribe at any time."
+  },
+  "footer": {
+    "about": {
+      "title": "About Us",
+      "description": "Your trusted destination for quality products. We're committed to sustainability and customer satisfaction."
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "shop": "Shop All",
+      "about": "About Us",
+      "contact": "Contact",
+      "faq": "FAQ",
+      "shipping": "Shipping Info"
+    },
+    "categories": {
+      "title": "Categories"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "address": "123 Market Street, City, Country",
+      "email": "support@marketplace.com",
+      "phone": "+1 555 123 4567"
+    },
+    "copyright": "© 2024 Marketplace. All rights reserved.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    }
+  }
+}

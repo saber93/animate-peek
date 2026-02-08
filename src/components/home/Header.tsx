@@ -1,14 +1,16 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, ShoppingCart, Menu, X, ChevronDown, User, Phone, Mail, Store } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
-const categories = [
-  { name: "Electronics", items: ["Phones", "Laptops", "Tablets", "Accessories"] },
-  { name: "Fashion", items: ["Men", "Women", "Kids", "Shoes"] },
-  { name: "Home & Living", items: ["Furniture", "Decor", "Kitchen", "Garden"] },
-  { name: "Beauty", items: ["Skincare", "Makeup", "Hair Care", "Fragrances"] },
+const categoryKeys = [
+  { key: "electronics", items: ["phones", "laptops", "tablets", "accessories"] },
+  { key: "fashion", items: ["men", "women", "kids", "shoes"] },
+  { key: "homeAndLiving", items: ["furniture", "decor", "kitchen", "garden"] },
+  { key: "beauty", items: ["skincare", "makeup", "hairCare", "fragrances"] },
 ];
 
 // Social media icons as SVG components
@@ -43,6 +45,7 @@ const YouTubeIcon = () => (
 );
 
 export default function Header() {
+  const { t } = useTranslation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -56,35 +59,40 @@ export default function Header() {
           <div className="flex items-center gap-6 text-sm">
             <a href="#" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <Store className="w-4 h-4" />
-              <span className="hidden sm:inline">Marketplace Store</span>
+              <span className="hidden sm:inline">{t('header.storeName')}</span>
             </a>
             <a href="mailto:info@marketplace.com" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <Mail className="w-4 h-4" />
-              <span className="hidden md:inline">info@marketplace.com</span>
+              <span className="hidden md:inline">{t('header.email')}</span>
             </a>
             <a href="tel:+15551234567" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <Phone className="w-4 h-4" />
-              <span className="hidden sm:inline">+1 555 123 4567</span>
+              <span className="hidden sm:inline">{t('header.phone')}</span>
             </a>
           </div>
 
-          {/* Social Icons - Right Side */}
+          {/* Social Icons + Language Switcher - Right Side */}
           <div className="flex items-center gap-4">
-            <a href="#" className="hover:opacity-80 transition-opacity" aria-label="Twitter">
-              <TwitterIcon />
-            </a>
-            <a href="#" className="hover:opacity-80 transition-opacity" aria-label="Facebook">
-              <FacebookIcon />
-            </a>
-            <a href="#" className="hover:opacity-80 transition-opacity" aria-label="Instagram">
-              <InstagramIcon />
-            </a>
-            <a href="#" className="hover:opacity-80 transition-opacity" aria-label="TikTok">
-              <TikTokIcon />
-            </a>
-            <a href="#" className="hover:opacity-80 transition-opacity" aria-label="YouTube">
-              <YouTubeIcon />
-            </a>
+            <div className="hidden sm:flex items-center gap-4">
+              <a href="#" className="hover:opacity-80 transition-opacity" aria-label="Twitter">
+                <TwitterIcon />
+              </a>
+              <a href="#" className="hover:opacity-80 transition-opacity" aria-label="Facebook">
+                <FacebookIcon />
+              </a>
+              <a href="#" className="hover:opacity-80 transition-opacity" aria-label="Instagram">
+                <InstagramIcon />
+              </a>
+              <a href="#" className="hover:opacity-80 transition-opacity" aria-label="TikTok">
+                <TikTokIcon />
+              </a>
+              <a href="#" className="hover:opacity-80 transition-opacity" aria-label="YouTube">
+                <YouTubeIcon />
+              </a>
+            </div>
+            <div className="border-s border-primary-foreground/30 ps-4">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       </div>
@@ -109,26 +117,26 @@ export default function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-8">
-              {categories.map((category) => (
+              {categoryKeys.map((category) => (
                 <div
-                  key={category.name}
+                  key={category.key}
                   className="relative"
-                  onMouseEnter={() => setActiveCategory(category.name)}
+                  onMouseEnter={() => setActiveCategory(category.key)}
                   onMouseLeave={() => setActiveCategory(null)}
                 >
                   <button className="flex items-center gap-1 text-foreground/80 hover:text-foreground font-medium py-6 transition-colors">
-                    {category.name}
-                    <ChevronDown className="w-4 h-4" />
+                    {t(`header.categories.${category.key}`)}
+                    <ChevronDown className="w-4 h-4 rtl:rotate-180" />
                   </button>
                   
                   <AnimatePresence>
-                    {activeCategory === category.name && (
+                    {activeCategory === category.key && (
                       <motion.div
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 10 }}
                         transition={{ duration: 0.2 }}
-                        className="absolute top-full left-0 bg-card rounded-lg shadow-xl border border-border p-4 min-w-[200px]"
+                        className="absolute top-full start-0 bg-card rounded-lg shadow-xl border border-border p-4 min-w-[200px]"
                       >
                         {category.items.map((item) => (
                           <a
@@ -136,7 +144,7 @@ export default function Header() {
                             href="#"
                             className="block px-4 py-2 text-muted-foreground hover:text-foreground hover:bg-muted rounded-md transition-colors"
                           >
-                            {item}
+                            {t(`header.subcategories.${item}`)}
                           </a>
                         ))}
                       </motion.div>
@@ -158,7 +166,7 @@ export default function Header() {
                     className="overflow-hidden"
                   >
                     <Input
-                      placeholder="Search..."
+                      placeholder={t('common.search')}
                       className="h-9"
                       autoFocus
                     />
@@ -219,17 +227,17 @@ export default function Header() {
             className="lg:hidden bg-background border-b border-border overflow-hidden"
           >
             <div className="container mx-auto px-4 py-4">
-              {categories.map((category, index) => (
+              {categoryKeys.map((category, index) => (
                 <motion.div
-                  key={category.name}
+                  key={category.key}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
                   className="py-2"
                 >
                   <button className="flex items-center justify-between w-full text-foreground font-medium py-2">
-                    {category.name}
-                    <ChevronDown className="w-4 h-4" />
+                    {t(`header.categories.${category.key}`)}
+                    <ChevronDown className="w-4 h-4 rtl:rotate-180" />
                   </button>
                 </motion.div>
               ))}
