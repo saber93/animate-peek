@@ -24,7 +24,7 @@
     "cart": {
       "title": "سلة التسوق",
       "empty": "سلة التسوق فارغة",
-      "shipping_notice": "شحن مجاني للطلبات الأكثر من 100$!",
+      "shipping_notice": "شحن مجاني للطلبات الأكثر من 100درهم!",
       "subtotal": "الإجمالي الفرعي",
       "checkout": "إتمام الطلب",
       "view_cart": "عرض سلة التسوق"
@@ -44,15 +44,15 @@
   },
   "header": {
     "storeName": "متجر ماركت بليس",
-    "email": "info@marketplace.com",
-    "phone": "+1 555 123 4567",
+    "email": "info@alkhalede5.com",
+    "phone": "+971 50 642 0505",
     "shop": "المتجر",
     "all_products": "تسوق الكل",
     "new_arrivals": "وصل حديثاً",
     "special_offers": "عروض خاصة",
-    "welcome": "مرحباً بك في ماركت بليس",
+    "welcome": "مرحباً بك في ماركت الخالدي",
     "welcome_text": "استمتع بتجربة تسوق فريدة مع مجموعاتنا المختارة.",
-    "location": "123 شارع السوق، سان فرانسيسكو",
+    "location": "ابوظبي",
     "collection_2024": "مجموعة 2024",
     "categories": {
       "electronics": "الإلكترونيات",
@@ -427,10 +427,10 @@
     "contact": {
       "title": "اتصل بنا",
       "address": "123 شارع السوق، المدينة، البلد",
-      "email": "support@marketplace.com",
-      "phone": "+1 555 123 4567"
+      "email": "support@alkhalede5.com",
+      "phone": "+971 50 642 0505"
     },
-    "copyright": "© 2024 ماركت بليس. جميع الحقوق محفوظة.",
+    "copyright": "© 2026 ماركت الخالدي. جميع الحقوق محفوظة.",
     "links": {
       "about": "من نحن",
       "careers": "وظائف",
