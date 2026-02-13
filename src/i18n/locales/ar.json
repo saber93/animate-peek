@@ -78,6 +78,31 @@
       "makeup": "مكياج",
       "hairCare": "عناية بالشعر",
       "fragrances": "عطور"
+    },
+    "promo": "عرض ترويجي"
+  },
+  "navbar": {
+    "items": {
+      "iphone": "آيفون",
+      "samsung": "سامسونج",
+      "xiaomi": "شاومي",
+      "realme": "ريلمي",
+      "macbook": "ماك بوك",
+      "dell": "ديل",
+      "hp": "إتش بي",
+      "lenovo": "لينوفو",
+      "headphones": "سماعات رأس",
+      "chargers": "شواحن",
+      "cases": "حافظات",
+      "watches": "ساعات",
+      "tshirts": "تيشيرتات",
+      "jeans": "جينز",
+      "jackets": "جاكيتات",
+      "shoes": "أحذية",
+      "dresses": "فساتين",
+      "tops": "بناطيل",
+      "skirts": "تننانير",
+      "handbags": "حقائب يد"
     }
   },
   "shop": {
